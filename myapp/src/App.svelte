@@ -1,5 +1,7 @@
 <script>
+	import Kontaktfeld from './../../Kontaktfeld.svelte';
 	import TestWebsite from './../../testWebsite.svelte';
+
   import Counter from './lib/Counter.svelte'
 
 export let menu = 1;
@@ -25,6 +27,7 @@ export let menu = 1;
 {#if menu === 1}
 <TestWebsite />
 {/if}
+
 
 
 

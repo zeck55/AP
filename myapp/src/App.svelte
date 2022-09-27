@@ -27,6 +27,9 @@ export let menu = 1;
 {#if menu === 1}
 <TestWebsite />
 {/if}
+{#if menu=== 2}
+<Kontaktfeld/>
+{/if}
 
 
 

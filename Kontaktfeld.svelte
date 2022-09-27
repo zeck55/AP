@@ -8,7 +8,7 @@
 <input type="text" placeholder="Gruppe / Abteilung ">
 
 <div id ="tt">
-    <textarea name="Nachricht" id="tt" cols="30" rows="10"></textarea>
+    <textarea name="Nachricht" id="" cols="50" rows="10" placeholder="Nachricht"></textarea>
 </div>
 
 

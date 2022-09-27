@@ -1,4 +1,3 @@
-import Kontaktfeld from './Kontaktfeld.svelte';
 
 
 <main>
@@ -8,7 +7,7 @@ import Kontaktfeld from './Kontaktfeld.svelte';
 <input type="text" value="Nachname">
 <input type="text" value="Gruppe / Abteilung ">
 
-<button></button>
+<button>Senden</button>
 
 
 </main>

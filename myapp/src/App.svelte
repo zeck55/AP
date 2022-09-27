@@ -1,5 +1,5 @@
 <script>
-	import TestWebsite from './../../testWebsite.svelte'
+	import TestWebsite from './../../testWebsite.svelte';
   import svelteLogo from './assets/svelte.svg'
   import Counter from './lib/Counter.svelte'
 
@@ -19,6 +19,9 @@
   <div class="card">
     <Counter />
   </div>
+<div class ="card">
+<TestWebsite/>
+</div>
 
   <p>
     Check out <a href="https://github.com/sveltejs/kit#readme" target="_blank">SvelteKit</a>, the official Svelte app framework powered by Vite!

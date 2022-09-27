@@ -1,7 +1,7 @@
 <script>
-	import TestWebsite from './../../testWebsite.svelte'
-  import svelteLogo from './assets/svelte.svg'
+	import svelteLogo from './assets/svelte.svg'
   import Counter from './lib/Counter.svelte'
+  import TestWebsite from '../../testWebsite.svelte';
 
 </script>
 

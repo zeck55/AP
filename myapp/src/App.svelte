@@ -1,5 +1,5 @@
 <script>
-	import Kontaktfeld from './../../Kontaktfeld.svelte';
+	import Kontaktfeld from './../../Kontaktfeld.svelte'
 	import TestWebsite from './../../testWebsite.svelte';
 
   import Counter from './lib/Counter.svelte'

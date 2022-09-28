@@ -18,7 +18,7 @@ export let menu = 1;
   
   <ul>
 	<li><a href="/" on:click|preventDefault={() => (menu = 1)}>Home</a></li> |
-	<li><a href="/" on:click|preventDefault={() => (menu = 2)}>Profile</a></li>|
+	<li><a href="/" on:click|preventDefault={() => (menu = 2)}>Kontaktfeld</a></li>|
   <li><a href="/" on:click|preventDefault={() => (menu = 3)}>Auftratgsanahme</a></li>|
   <li><a href="/" on:click|preventDefault={() => (menu = 4)}>FAQ</a></li>|
   <li><a href="/" on:click|preventDefault={() => (menu = 5)}>Impresum</a></li>

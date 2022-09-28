@@ -1,1 +1,2 @@
-<h1>Impressum </h1>
+import Impressum from './Impressum.svelte';
+<p>Impressum</p>

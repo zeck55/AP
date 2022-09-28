@@ -1,7 +1,7 @@
 
 
 <main>
-<p>Kontaktfeld</p>
+<h1>Kontaktfeld</h1>
 
 <input type="text" placeholder="Name">
 <input type="text" placeholder="Nachname">

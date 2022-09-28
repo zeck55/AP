@@ -38,12 +38,12 @@ export let menu = 1;
 {/if}
 
 {#if menu === 4}
-<Auftragsanahme/>
+<FAQ/>
 {/if}
 
 
 {#if menu === 5}
-<Auftragsanahme/>
+<Impressum/>
 {/if}
 
 

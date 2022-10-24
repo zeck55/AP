@@ -24,25 +24,25 @@ export let menu = 1;
   <li><a href="/" on:click|preventDefault={() => (menu = 5)}>Impresum</a></li>
 </ul>
 
-{#if menu === 1}
+{#if menu ==1}
 <TestWebsite />
 {/if}
 
 
-{#if menu === 2}
+{#if menu == 2}
 <Kontaktfeld />
 {/if}
 
-{#if menu === 3}
+{#if menu == 3}
 <Auftragsanahme/>
 {/if}
 
-{#if menu === 4}
+{#if menu == 4}
 <FAQ/>
 {/if}
 
 
-{#if menu === 5}
+{#if menu == 5}
 <Impressum/>
 {/if}
 

@@ -1,35 +1,53 @@
-import App from './../../../../myapp/src/App.svelte';
+    <script>
+  const droparea = document.querySelector(".droparea");
+
+droparea.addEventListener("dragover", (e) => {
+  e.preventDefault();
+  droparea.classList.add("hover");
+});
+
+droparea.addEventListener("dragleave", () => {
+  droparea.classList.remove("hover");
+});
+
+droparea.addEventListener("drop", (e) => {
+  e.preventDefault();
+
+  const image = e.dataTransfer.files[0];
+  const type = image.type;
+
+  if (
+    type == "image/png" ||
+    type == "image/jpg" ||
+    type == "image/jpeg"
+  ) {
+    return upload(image);
+  } else {
+    droparea.setAttribute("class", "droparea invalid");
+    droparea.innerText = "Invalid File Format!";
+    return false;
+  }
+});
+
+const upload = (image) => {
+  droparea.setAttribute("class", "droparea valid");
+  droparea.innerText = "Added " + image.name;
+};
+    
+    </script>
+
+
 <main>
 
 <h1>Auftragsanahme</h1>
-<div class= "droparea hover" > Drop the Image Here </div>
+<div class= "droparea hover valid invalid" > Drop the Image Here </div>
 
 
 </main>
 
-<script>
-    const droparea = document.querySelector(" .droparea");
-    droparea.addEventListener("dragover", () =>{
-        e.preventDefault();
-        droparea.classList.add("hover");
-    });
-
-
-    droparea.addEventListener("dragleave", ()=>{
-    droparea.classList.remove("hover");
-    });
-
-    droparea.addEventListener("drop", (e) => {
-        e.preventDefault();
-
-        const image = e.dataTransfer.files[0];
-        const type = image.type;
-        console.log (type); 
-    });
-
-</script>
 
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
     *{
         margin:0;
@@ -38,7 +56,7 @@ import App from './../../../../myapp/src/App.svelte';
         font-family :"Poppins";
 
     }
-    main {background-color: #091911;
+    main{background-color: #091911;
         color:#fff;
         display: flex;
         justify-content: center;

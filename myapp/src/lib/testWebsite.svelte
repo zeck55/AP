@@ -9,6 +9,9 @@ ________________________________________________
         <div><!--Bild vom druck --></div>
         <div><!--Bild vom druck --></div>
         <div><!--Bild vom druck --></div>
+
+        <div><!--kosten abrechnug pro std 1 euro --></div>
+        
     <!--Navbar erstellen
         Home 
         kontaktfeld

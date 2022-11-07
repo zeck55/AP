@@ -5,6 +5,7 @@
   import Auftragsanahme from './lib/Auftragsanahme.svelte';
 	import FAQ from './lib/FAQ.svelte';
   import Impressum from './lib/Impressum.svelte';
+  import Archiv from './lib/Archiv.svelte';
 
 
 export let menu = 1;
@@ -21,7 +22,8 @@ export let menu = 1;
 	<li><a href="/" on:click|preventDefault={() => (menu = 2)}>Kontaktfeld</a></li>|
   <li><a href="/" on:click|preventDefault={() => (menu = 3)}>Auftratgsanahme</a></li>|
   <li><a href="/" on:click|preventDefault={() => (menu = 4)}>FAQ</a></li>|
-  <li><a href="/" on:click|preventDefault={() => (menu = 5)}>Impresum</a></li>
+  <li><a href="/" on:click|preventDefault={() => (menu = 5)}>Impresum</a></li>|
+  <li><a href="/" on:click|preventDefault={() => (menu = 6)}>Archiv</a></li>
 </ul>
 
 {#if menu ==1}
@@ -46,7 +48,11 @@ export let menu = 1;
 <Impressum/>
 {/if}
 
+{#if menu == 6}
+<Archiv/>
+{/if}
 
+<button>And</button>
 
 
 </main>

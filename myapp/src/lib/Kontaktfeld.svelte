@@ -3,15 +3,15 @@
 <main>
 <h1>Kontaktfeld</h1>
 
-<input type="text" placeholder="Name">
-<input type="text" placeholder="Nachname">
-<input type="text" placeholder="Gruppe / Abteilung ">
-<input type="text" placeholder ="E-mail">
-<input type="text" placeholder="telefon">
+<input type="text" placeholder="Name" id="name">
+<input type="text" placeholder="Nachname" id="nachname">
+<input type="text" placeholder="Gruppe / Abteilung" id="gruppe" >
+<input type="text" placeholder ="E-mail" id ="E-mail">
+<input type="text" placeholder="Telefon" id = "telefon">
 
 
 
-<div id ="tt">
+<div>
     <textarea name="Nachricht" id="" cols="50" rows="10" placeholder="Nachricht"></textarea>
 </div>
 

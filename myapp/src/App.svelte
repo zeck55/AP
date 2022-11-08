@@ -17,7 +17,7 @@ export let menu = 1;
 
 
   
-  <ul>
+  <ul id="Navbar">
 	<li><a href="/" on:click|preventDefault={() => (menu = 1)}>Home</a></li> |
 	<li><a href="/" on:click|preventDefault={() => (menu = 2)}>Kontaktfeld</a></li>|
   <li><a href="/" on:click|preventDefault={() => (menu = 3)}>Auftratgsanahme</a></li>|
@@ -52,7 +52,7 @@ export let menu = 1;
 <Archiv/>
 {/if}
 
-<button>And</button>
+<button id ="anmeldung">Anmelden</button>
 
 
 </main>

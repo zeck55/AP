@@ -33,15 +33,15 @@ body {
 }
 
 h1 {                    /*Uberschriften*/
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size:30px;
+  border: solid red 2px;
 }
 
 
 #app {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 3px;
   text-align: center;
 }
 
@@ -67,15 +67,16 @@ button:focus-visible {
 
 
 #anmeldung{
-  position: relative;
-  bottom: 270px ;
-  left:250px ;
+  position: absolute;
+  bottom:650px ;
+  left: 1350px ;
   border: 2px solid red ; /*wieder löschen  */
 }
 #Navbar{
-  position: relative;
-  right: 100px;
-  bottom:100px;
+  position: absolute;
+  bottom:500px;
+  left:500px;
+  
   border :2px solid red ; /*wieder löschen  */
 }
 #buttonFaq{
@@ -86,32 +87,44 @@ button:focus-visible {
 
 #name{
   position: relative;
-  top :20px;
+  top :32px;
+  right: 174px;
   border:solid red 2px;
 
 }
 #nachname{
   position: relative;
-  top:60px;
-  right: 180px;
+  top:65px;
+  right: 350px;
   border:solid red 2px;
   
 }
 #gruppe{
   position:relative;
-  top :100px;
-  right: 360px;
+  top :95px;
+  right: 525px;
   border:solid red 2px;
 }
 #E-mail{
   position: relative;
-  top:140px;
-  right: 540px;
+  top:125px;
+  right: 700px;
   border:solid red 2px;
 }
 #telefon{
   position: relative;
-  top:180px;
-  right: 720px;
+  top:155px;
+  right: 875px;
   border :solid red 2px ;
+}
+
+#faq{
+position: relative;
+border: solid 2px red;
+top: 100px;
+}
+#imp{
+  position: relative;
+  border: red solid 2px;
+  top:200px;
 }

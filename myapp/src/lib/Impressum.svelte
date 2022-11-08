@@ -1,4 +1,4 @@
-
+<div id="imp">
 <h1>Impressum</h1>
 ____________________________
 <p>Riccardo Schindler</p>
@@ -14,3 +14,4 @@ ____________________________
 ____________________________
 <p>Telefon: 017669856437 </p>
 <p>Email : schindlerriccardo@gmail.com</p>
+</div>

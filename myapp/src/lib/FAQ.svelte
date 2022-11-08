@@ -1,3 +1,5 @@
+<div id="faq">
+
 <h1>Das ist die FAQ </h1>
 
 
@@ -19,3 +21,14 @@
     <textarea name="Nachricht" id="" cols="50" rows="10" placeholder="Fragen und E-mail"></textarea>
 </div>
   <button id="buttonFaq">Senden</button>
+
+
+
+
+
+
+
+
+
+
+</div>

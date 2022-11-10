@@ -1,4 +1,4 @@
- <h1 class="border">Hier können sie Druckaufträge abschicken</h1>
+ <h1 >Hier können sie Druckaufträge abschicken</h1>
 
 
 

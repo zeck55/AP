@@ -13,7 +13,7 @@ export let menu = 1;
 
 <main>
 
-
+<div id="banna"></div>
 
 
   
@@ -53,6 +53,7 @@ export let menu = 1;
 {/if}
 
 <button id ="anmeldung">Anmelden</button>
+
 
 
 </main>

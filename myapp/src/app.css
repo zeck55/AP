@@ -34,7 +34,7 @@ body {
 
 h1 {                    /*Uberschriften*/
   font-size:30px;
-  border: solid red 2px;
+  
 }
 
 
@@ -70,14 +70,12 @@ button:focus-visible {
   position: absolute;
   bottom:650px ;
   left: 1350px ;
-  border: 2px solid red ; /*wieder löschen  */
 }
 #Navbar{
   position: absolute;
   bottom:500px;
   left:500px;
   
-  border :2px solid red ; /*wieder löschen  */
 }
 #buttonFaq{
   position: relative;
@@ -89,42 +87,52 @@ button:focus-visible {
   position: relative;
   top :32px;
   right: 174px;
-  border:solid red 2px;
+
 
 }
 #nachname{
   position: relative;
   top:65px;
   right: 350px;
-  border:solid red 2px;
   
 }
 #gruppe{
   position:relative;
   top :95px;
   right: 525px;
-  border:solid red 2px;
 }
 #E-mail{
   position: relative;
   top:125px;
   right: 700px;
-  border:solid red 2px;
 }
 #telefon{
   position: relative;
   top:155px;
   right: 875px;
-  border :solid red 2px ;
 }
 
 #faq{
 position: relative;
-border: solid 2px red;
 top: 100px;
 }
 #imp{
   position: relative;
-  border: red solid 2px;
   top:200px;
+}
+#banna{
+  width :1300px;
+  height: 100px;
+
+  
+  margin: auto;
+  position: fixed;
+  bottom:475px;
+  left:100px;
+ background-color:rgba(89, 108, 207, 0.2); 
+  
+}
+#anpass{
+  position: relative;
+  top:20px;
 }

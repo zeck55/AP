@@ -123,10 +123,7 @@ top: 100px;
 #banna{
   width :1300px;
   height: 100px;
-
-  
-  margin: auto;
-  position: fixed;
+  position: absolute;
   bottom:475px;
   left:100px;
  background-color:rgba(89, 108, 207, 0.2); 

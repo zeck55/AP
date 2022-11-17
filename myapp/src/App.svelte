@@ -9,6 +9,8 @@
 
 
 export let menu = 1;
+
+
 </script>
 
 <main>
@@ -58,8 +60,3 @@ export let menu = 1;
 
 </main>
 
-<style>
- ul li {
-  display: inline;
- }
-</style>

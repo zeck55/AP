@@ -75,6 +75,10 @@ button:focus-visible {
   position: absolute;
   bottom:500px;
   left:500px;
+  display: flex;
+  padding: auto;
+
+
   
 }
 #buttonFaq{
@@ -132,4 +136,8 @@ top: 100px;
 #anpass{
   position: relative;
   top:20px;
+}
+ul li{
+
+  display: inline-flex;
 }

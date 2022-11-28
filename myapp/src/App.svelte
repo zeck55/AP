@@ -1,11 +1,13 @@
 <script>
-  
+ 
   import TestWebsite from './lib/testWebsite.svelte';
 	import Kontaktfeld from './lib/Kontaktfeld.svelte';
   import Auftragsanahme from './lib/Auftragsanahme.svelte';
 	import FAQ from './lib/FAQ.svelte';
   import Impressum from './lib/Impressum.svelte';
   import Archiv from './lib/Archiv.svelte';
+ 
+  
 
 
 export let menu = 1;
@@ -13,7 +15,13 @@ export let menu = 1;
 
 </script>
 
+
 <main>
+
+
+
+
+
 
 <div id="banna"></div>
 

@@ -1,16 +1,19 @@
 
 
 
-
+<main>
 <p>________________________________________________</p>
-  <p>Das wird die Home seit</p>
-  <div><!--kosten abrechnug pro std 1 euro --></div>
+ <h1 class="anpass">Startseite</h1>
 <p>________________________________________________</p>
 
 
 
 <div class="container">
+      <!-- svelte-ignore a11y-missing-attribute -->
       <img src="Eule.jpg" width="300px" height="200px">
       <img src="würfel.jpg" width="300px" height="200px">
       <img src="mensch.jpg" width="300px" height="200px">
 </div>
+
+</main>
+

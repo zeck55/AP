@@ -3,39 +3,45 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-
   color-scheme: light dark;                   /*Hintergrund bearbeitung */
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
-  
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+/*navbarpunkte*/
 a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
 
+p {
+  font-size: smaller;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
 
-h1 {                    /*Uberschriften*/
-  font-size:30px;
-      margin: 0;
+/*Überschriften*/
+h1 {                    
+  font-size:20px;
       display: flex;
       place-items: center;
-      min-width: 320px;
-      min-height: 100vh;
+      min-width: 650px;
+      max-width: 900px;
+      min-height: 50px;
+      width: 100%;
+      margin: 0 auto;
     }
-  
 
-
-
+/*Allgemeine Text einstellung */
 #app {
   max-width: 1280px;
   margin: 0 auto;
@@ -43,6 +49,7 @@ h1 {                    /*Uberschriften*/
   text-align: center;
 }
 
+/*Allgemeine Button einstellung */
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -54,98 +61,154 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-
-
+/*App. svelte*/
 #anmeldung{
   position: absolute;
   bottom:650px ;
   left: 1350px ;
 }
+
+/*App.svelte*/
 #Navbar{
-  position: absolute;
-  bottom:500px;
-  left:500px;
   display: flex;
-  padding: auto;
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 400px;
+  min-width: 100px;
 
-
-  
 }
+
+/*App.svelte*/
+.banna {
+  max-width: 1000px;
+  max-height: 50px;
+  min-height: 50px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: rgba(89, 108, 207, 0.2);
+
+}
+
+/*Home seite*/
+.container {
+  display: flex;
+  margin: 100px;
+}
+
+/*Home seite*/
+.container img {
+  padding: 15px;
+}
+
+/*Homeseite*/
+ul li {
+  display: flex;
+}
+
+/*kontakt seite*/
+.anpass {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 500px;
+  min-height: 30px;
+  max-height: 100px;
+}
+
+/*kontakt seite */
+.nachrichtenfeld {
+  display: flex;
+  margin: 50px;
+  float: left;
+  flex-direction: column;
+  width: 10rem;
+}
+
+/*Kontakt feld*/
+.feld {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  max-width: 400px;
+  margin-right: 400px;
+}
+
+/*Kontakt feld*/
+.suuus {
+  display: flex;
+  flex-direction: column;
+  margin: -200px auto;
+  margin-right: 200px;
+  margin-top: -210px;
+}
+
+/*Auftrags seite*/
+.test {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  max-height: 100px;
+  min-height: 50px;
+}
+
+/*Auftrags seite*/
+.box {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 5px;
+  max-width: 600px;
+  min-width: 100px;
+  max-height: 400px;
+  min-height: 200px;
+  margin-bottom: -100px;
+}
+
+/*FAQ*/
 #buttonFaq{
-  position: relative;
-  left: 360px ;
-  bottom: 100px;
-}
-
-#name{
-  position: relative;
-  top :32px;
-  right: 174px;
-
-
-}
-#nachname{
-  position: relative;
-  top:65px;
-  right: 350px;
-  
-}
-#gruppe{
-  position:relative;
-  top :95px;
-  right: 525px;
-}
-#E-mail{
-  position: relative;
-  top:125px;
-  right: 700px;
-}
-#telefon{
-  position: relative;
-  top:155px;
-  right: 875px;
-}
-
-#faq{
-position: relative;
-top: 100px;
-}
-#imp{
-  position: relative;
-  top:200px;
-}
-#banna{
-  width :1300px;
-  height: 100px;
-  position: absolute;
-  bottom:475px;
-  left:100px;
- background-color:rgba(89, 108, 207, 0.2); 
-  
-}
-#anpass{
-  position: relative;
-  top:20px;
-}
-ul li{
-
-  display: inline-flex;
-}
-
-
-.container{
   display: flex;
-  margin: 150px;
-  
+  flex-direction: row;
+  max-width: 100px;
+  max-height: 100px;
 }
-.container img{
-padding: 15px ;
+
+/*FAQ*/
+#faq{
+display: flex;
+flex-direction:column;
+margin: 0 auto;
+max-width: 800px;
+}
+
+/*FAQ*/
+.buttonFaq{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+/*Impressum*/
+#i{
+  display: flex;
+  flex-direction: column;
+  margin:0 auto;
+}
+
+/*archiv*/
+.archiv{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width:800px;
 }

@@ -1,28 +1,31 @@
 {
   "name": "expresstutorial",
-  "private": true,
+  "private": false,
   "version": "1.0.0",
   "type": "module",
+  "main": "server.cjs",
   "scripts": {
-    "dev": "vite",
+    "dev": "nodemon server.cjs",
     "build": "vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@sveltejs/adapter-node": "^1.0.0-next.101",
     "@sveltejs/vite-plugin-svelte": "^1.0.2",
+    "nodemon": "^2.0.20",
     "svelte": "^3.49.0",
     "svelte-dark-mode": "^2.1.0",
     "vite": "^3.1.0"
   },
   "description": "This template should help get you started developing with Svelte in Vite.",
-  "main": "expresstutorial",
   "dependencies": {
+    "cors": "^2.8.5",
     "debug": "^4.3.4",
     "deepmerge": "^4.2.2",
     "esbuild": "^0.15.9",
     "esbuild-windows-64": "^0.15.9",
     "estree-walker": "^2.0.2",
-    "express": "^4.18.2",
+    "express": "^4.17.1",
     "function-bind": "^1.1.1",
     "has": "^1.0.3",
     "is-core-module": "^2.10.0",
@@ -30,6 +33,7 @@
     "magic-string": "^0.26.4",
     "ms": "^2.1.2",
     "nanoid": "^3.3.4",
+    "path": "^0.12.7",
     "path-parse": "^1.0.7",
     "picocolors": "^1.0.0",
     "picomatch": "^2.3.1",
@@ -46,5 +50,6 @@
   "repository": {
     "type": "git",
     "url": "rschindler "
-  }
+  },
+  "keywords": []
 }

@@ -2,7 +2,7 @@
 
 
 
-<main>
+
 
 <p>________________________________________________</p>
 <h1 class="anpass">Hier können sie Druckaufträge abschicken</h1>
@@ -23,4 +23,3 @@
 
 
 
-</main>

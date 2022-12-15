@@ -15,5 +15,9 @@
       <img src="mensch.jpg" width="300px" height="200px">
 </div>
 
+<div> Druck kostesten werden in Stunden abgerechent 1std = 1 Euro</div>
+
+
+
 </main>
 

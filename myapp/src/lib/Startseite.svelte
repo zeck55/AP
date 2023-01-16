@@ -1,7 +1,4 @@
 
-
-
-<main>
 <p>________________________________________________</p>
  <h1 class="anpass">Startseite</h1>
 <p>________________________________________________</p>
@@ -16,8 +13,4 @@
 </div>
 
 <div> Druck kostesten werden in Stunden abgerechent 1std = 1 Euro</div>
-
-
-
-</main>
 

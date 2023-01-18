@@ -1,0 +1,123 @@
+// ein neues Element anlegen 
+db.anschrift.insertOne(
+    {
+        name:"Banane",
+        price:0.99,
+        category:"obst",
+        views:16
+
+    }
+)
+// Mehrere Documente 
+db.anschrift.insertMany(
+    [
+        {
+            name:"Apfel",
+            price:0.60,
+            category:"obst",
+            views:2,
+        },
+        {
+            name:"Apfel Neu",
+            price:0.80,
+            category:"obst",
+            views:10,
+        },
+        {   name:"Kiwi",
+            price: 0.60,
+            category: "obst",
+            views:3 ,
+            ratings:[
+                {user:"Paul", stars:4 },
+                {user:"Tom", stars:5 },
+                {user:"Max", stars:3 },
+            ]
+
+        }
+    ]
+)
+
+// Alle documets aus der Colelction anzeigen
+db.anschrift.find();
+
+// Ergebnisse formartiern 
+db.anschrift.find().pretty();
+
+//Ergebinsse filtern
+db.anschrift.find({name: "Apfel"})
+
+// Ergenbisse sortieren
+db.anschrift.find().sort({name: 1 }) // von oben nach unten
+db.anschrift.find().sort({name: -1 }) // von unten nach oben 
+
+//Ergebnisse Zählen
+db.anschrift.find().count()
+db.anschrift.countDocuments()
+
+//ergebnisse Limitiern
+db.anschrift.find().limit(2)
+
+//verkettung mehrerer Function
+db.anschrift.find().limit(4).sort({ price:1 })
+
+//forEach schleife
+db.anschrift.find().forEach(function(doc){
+        print("Produkt  " + doc.name )
+})
+
+// Ergebnisse nach Größer /kleiner filtern
+db.anschrift.find({price: {$gt:1 } })
+db.anschrift.find({price: {$gte:1 } })
+db.anschrift.find({price: {$lt:1 } })
+db.anschrift.find({price: {$lte:1 } })
+
+//index anlegen 
+db.anschrift.createIndex(
+    {name : 'text'},
+    { default_language: "german"},
+    )
+
+// index anzeigen 
+db.anschrift.getIndexes()
+
+// indexs löschen
+db.anschrift.dropIndex('name_text');
+
+
+// Text suche 
+db.anschrift.find({
+    $text:{
+      
+        $search: "Apfel"     
+    }
+})
+
+//nur ein ergebniss
+db.anschrift.findOne({category:"obst"})
+
+// Alle Ergebnisse ausgeben 
+db.anschrift.find({},{
+name:1,
+price:1
+})
+
+//Alle ergebniss ohne bestimmte felder
+db.anschrift.find({},{
+    ratings:0,
+    views :0
+})
+
+// Document updaten
+db.anschrift.updateOne({ name:"Banane"},{
+    $set: {
+        price:1.29
+    }
+})
+// ein doucment aktuallieren / einfügen 
+db.anschrift.updateOne({ name:"Gurke"},{
+    $set: {
+        price:0.5,
+        category:"gemüse"
+        views:0
+    }
+}) 

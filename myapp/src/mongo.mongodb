@@ -117,7 +117,54 @@ db.anschrift.updateOne({ name:"Banane"},{
 db.anschrift.updateOne({ name:"Gurke"},{
     $set: {
         price:0.5,
-        category:"gemüse"
-        views:0
+        category:"gemüse",
+        views:0,
     }
+},{
+    upsert: true  
 }) 
+// Viele documents aktualisiern
+db.anschrift.updateMany({ category : "obst"},
+{
+    $set:{
+        price : 0.2
+    }
+})
+
+// Einen Wert erhöhen 
+db.anschrift.update({ name: "Gurke"},
+{
+    $inc: {
+        views : 1,
+    }
+})
+
+// feld umbennen
+db.anschrift.update({ name: "Gurke"},
+{
+    $rename: {
+        views : "Likes"
+    }
+})
+
+// Daten aus  Collection verabeiten 
+db.anschrift.aggregate([
+    {
+        $match: {
+        price: {$gte :0.20}
+        }
+    },
+    {
+        $group: {
+        _id: "$category", 
+        total_views: {$sum: "$views"}
+        }
+    }
+])
+
+//Documents löschen 
+db.anschrift.deleteOne({ name: "Gurke"})
+
+// Viele document löschen
+db.anschrift.deleteMany({ category: "Obst"})
+

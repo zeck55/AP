@@ -16,21 +16,35 @@
 </datalist> 
 <input type="text" placeholder="Name" >
 <input type="text" placeholder="Nachname" >
-<input type="text" placeholder="Gruppe / Abteilung"  >
+<input type="text" placeholder="Gruppe / Abteilung" >
 <input type="text" placeholder ="E-mail" >
-<input type="text" placeholder="Telefon" >
+<input type="text" placeholder="Telefon"  >
 </div>
 
 
 
 
 <div class="feld">
-    <textarea name="Nachricht" id="" cols="50" rows="10" placeholder="Nachricht"></textarea>
+    <textarea name="Nachricht" id="" cols="50" rows="10" placeholder="Nachricht" bind:value={nachrichtenlist}></textarea>
+    
 </div>
 
 
-<button class="suuus">Senden</button>
+<button class="suuus" on:click={addnachrichten}>Senden</button>
 
 
 </main>
 
+<script>
+    
+let nachrichten='';
+
+
+let nachrichtenlist =[{status:true}];
+
+function addnachrichten(){
+    nachrichtenlist =[ ...nachrichtenlist, {text: nachrichten, status: true}];
+    nachrichten = '';
+    console.log()
+}
+</script>
